@@ -6,27 +6,25 @@
     <title>grid</title>
     <style>
         body{
-            height: 850px;
             border: 2px solid skyblue;
-            
+            margin: 0 auto;
+            max-width: 1140px;
         }
-        .one{
-            display: grid;
-            border: 2px solid blueviolet;
-            /* grid-template-columns: width; */
-            max-width: 50%;
-            padding: 100px;
-            background-color: lightcyan;
+        .image-container{
+            display: flex;
         }
-        .two{
-            border: 2px solid aqua;
-            max-width: 50%;
-            padding: 150px;
-            background-color: ghostwhite;
+        .image-container img{
+            width: 100%;
+        }
+        .image-container div{
+            width: 50%;
         }
         @media screen and (max-width:576px) {
-            .one{
-               width: 40%;
+            .image-container{
+                flex-direction: column;
+            }
+            .image-container{
+                width: 100%;
             }
             
         }
@@ -35,9 +33,14 @@
 </head>
 <body>
     <main>
-        <h3>My grid layout</h3>
-        <div class="one">Left</div>
-        <div class="two">Right</div>
+        <div class="image-container">
+            <div>
+                <img src="images/12345.jpg" alt="">
+            </div>
+            <div><img src="images/1000112589.png" alt="">
+            </div>
+
+        </div>
     </main>
     
 </body>
