@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        body{
+            height: 850px;
+            border: 2px solid skyblue;
+            
+        }
+        .one{
+            display: grid;
+            border: 2px solid blueviolet;
+            /* grid-template-columns: width; */
+            max-width: 50%;
+            padding: 100px;
+            background-color: lightcyan;
+        }
+        .two{
+            border: 2px solid aqua;
+            max-width: 50%;
+            padding: 150px;
+            background-color: ghostwhite;
+        }
+        @media screen and (max-width:576px) {
+            .one{
+               width: 40%;
+            }
+            
+        }
+    </style>
+     
+</head>
+<body>
+    <main>
+        <h3>My grid layout</h3>
+        <div class="one">Left</div>
+        <div class="two">Right</div>
+    </main>
+    
+</body>
+</html>
